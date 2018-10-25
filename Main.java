@@ -265,6 +265,23 @@ class Main
          * Task 11.  Reverse the order of elements in ar2
          */
         
+        System.out.println("** Task 11 **");
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
+            
+        int ar2half = ar2.length/2;
+        System.out.println(ar2half);
+        int task11Temp;
+        for (int i=0 ; i<ar2half ; i++)
+        {
+            task11Temp = ar2[i];
+            System.out.println(" "+i+":"+(ar2.length-i));
+            ar2[i] = ar2[ar2.length-1-i];
+            ar2[ar2.length-1-i]=task11Temp;
+        }
+               
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
          
         /*
          * Task 12: 
@@ -290,6 +307,11 @@ class Main
          *  Count how many words have more than 5 letters.
          */
         
+        int John_HOE = 1;
+        int dead = 1;
+        if(John_HOE==dead)
+        System.out.println("JohnHoe==Dead");
+         
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
