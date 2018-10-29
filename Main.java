@@ -22,7 +22,7 @@ class Main
                               n
          */
         Scanner s = new Scanner(System.in);
-        System.out.print(" Please type in an integer :");
+        System.out.print(" Please type in an integer :");   
         int n = s.nextInt();
         
         /*
@@ -306,42 +306,100 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        
-        int John_HOE = 1;
-        int dead = 1;
-        if(John_HOE==dead)
-        System.out.println("JohnHoe==Dead");
-         
-        /*
-         * Task 13
-         * Create an array called monsterArray of 5 Monsters.
-         * The name of the monsters are
-         * "Cookie"
-         * "Grover"
-         * "Oscar the Grouch"
-         * "Elmo"
-         * "Rosita"
-         * 
-         * Print out their names
-         * Use a for loop to print out the names of monster that start with
-         * a vowel
-         */
-        
-         /*
-          * Task 14
-          * Create an array of integers from 3 to 94 and call it arx
-          * Create an array of the indices of arx when the item is
-          * divisible by 3.  Call this arindex
-          *      arx[0]=94
-          *      arx[1]=95
-          *      arx[2]=96 // this is divisible.  Index is 2
-          *      arx[3]=97
-          *      arx[4]=98
-          *      arx[5]=99 // this is divisible  Index is 5
-          *      
-          *      So arindex[0]=2
-          *         arindex[1]=5
-          */
+      String[] ar5=new String[16];
+ ar5[0]="Four";
+ ar5[1]="score";
+ ar5[2]="and";
+ ar5[3]="seven";
+ ar5[4]="years";
+ ar5[5]="ago";
+ ar5[6]="our";
+ ar5[7]="fathers";
+ ar5[8]="brought";
+ ar5[9]="forth";
+ ar5[10]="on";
+ ar5[11]="this";
+ ar5[12]="continent";
+ ar5[13]="a";
+ ar5[14]="new";
+ ar5[15]="nation";
+int count5=0;
+ 
+ for (int i=0 ; i<ar5.length ; i++)
+ {
+
+ 
+     if (ar5[i].length()>5)
+         count5++;
+ }
+ 
+ System.out.println(" TASK 12: is " + count5);
+
+ k=0; // previously defined
+ String[] task12Greater= new String[count5];
+ for (int i=0 ; i<ar5.length ; i++)
+ {
+     if (ar5[i].length() >5)
+     {
+         task12Greater[k]=ar5[i];
+         k++;
+     }
+ }
+ 
+ for (int i=0 ; i<task12Greater.length ; i++)
+ {
+     System.out.println(" 12 BOSS["+i+"] :"+task12Greater[i]);
+ }   
+ System.out.println("** Task 13 **");
+ String[] monsterArray={ "Cookie",  "Grover",  "Oscar the Grouch" , "Elmo", "Rosita"};
+    String a =monsterArray[0];
+    
+    for(int i = 0; i<monsterArray.length;i++)
+         {      int check = 0;
+    char c=monsterArray[i].toLowerCase().charAt(0);
+    if(
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      
+        System.out.println("** Task 14 **");
+ 
+ int start = 3;
+ int end = 94;
+ int n14=end - start+1;
+ 
+ int[] arx = new int[n14];
+
+
+int count14index=0;
+
+ for (int i=0 ; i<n14 ; i++)
+{
+    arx[i]=start+i;
+    if (arx[i]%3==0)
+        count14index++;
+}
+
+int[] arxindex = new int[count14index];
+int k14=0;
+for (int i=0 ; i<n14 ; i++)
+{
+    if (arx[i]%3==0)
+    { 
+        arxindex[k14]=i;
+        k14++;
+    }
+}
+
+for (int i=0 ; i<count14index; i++)
+    System.out.println(arxindex[i]);
          
          /*
           * Create an arrary called "fb" and calculate the
